@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*Titres et Sous-Titres*/
+.Titre {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+
+.sous-Titre {
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; 
+    color: white;
+}
+
+/*Corps du Document*/
+body {
+    margin: 0;
+    top: 0;
+    padding: 0;
+    padding-top: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/*Animation de Dégradé*/
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/*Conteneurs d’Informations*/
+.info-container, .Information2 {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.info-container:hover, .Information2:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.02);
+}
+
+.info-title, .info2-title {
+    color: #333;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.info-title:hover, .info2-title:hover {
+    color: #ff6f61;
+}
+
+.info-description, .info-description2 {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-top: 10px;
+}
+
+.info-description.open, .info-description2.open {
+    max-height: 200px; 
+    opacity: 1;
+}
+
+/*Arrière-Plan*/
+.background {
+    position: relative;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, black, pink);
+    background-size: 600% 600%;
+    animation: gradientBG 15s ease infinite;
+}
+
+/*Carte et Informations*/
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+#info {
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* heurs */
+#clock {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    z-index: 1000; /* S'assure que l'heure est au-dessus des autres éléments */
+}
+
+
+/* Style pour le conteneur de l'heure */
+#clock {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    z-index: 1000; /* S'assure que l'heure est au-dessus des autres éléments */
+}
+
+/* Style pour le conteneur de la localisation */
+#location {
+    position: fixed;
+    top: 40px; 
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    z-index: 1000; 
+}
+
+
+
+
+
+
+
+
+
+/* Style pour le conteneur d'historique */
+.history-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Style pour la liste de l'historique */
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour chaque élément de la liste */
+#history-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#history-list li:last-child {
+    border-bottom: none;
+}
+
+/* Conteneur de la barre de recherche */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+/* Style de la barre de recherche */
+#search-bar {
+    padding: 10px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Bouton de recherche */
+#search-button {
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#search-button:hover {
+    background-color: #ff4a3a;
+}
+
+/* Liste des suggestions */
+#suggestions-list {
+    position: absolute;
+    top: 45px; /* Aligne les suggestions sous la barre de recherche */
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Chaque élément de la suggestion */
+#suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions-list li:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+

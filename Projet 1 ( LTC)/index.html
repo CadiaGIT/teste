@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LTC</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="Animation.js"></script>
+
+
+    <div class="background">
+        
+            <h1 class="Titre">LTC</h1>
+            <h2 class="sous-Titre">Look This Country</h2>
+        
+
+        <div class="info-container">
+            <h1 class="info-title" onclick="toggleDefinition()">C'est Quoi LTC ?</h1>
+            <div class="info-description" id="definition">
+                LTC C'est un site internet pour but d'avoir les informations d'un pays.
+
+            </div>
+        </div>
+        <div class="Information2">
+            <h1 class="info2-title" onclick="toggleDefinition2()">Comment ça fonctionne ?</h1>
+            <div class="info-description2" id="definition2">
+                La map est affichée avec l'extension Leaflet Map
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Rechercher une ville..." onkeyup="showSuggestions()">
+        <button id="search-button" onclick="searchCity()">🔍</button>
+        <ul id="suggestions-list"></ul>
+    </div>
+
+
+
+    <div class="history-container">
+        <h2>Historique des villes consultées</h2>
+        <ul id="history-list"></ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="location"></div>
+    <div id="clock"></div>
+    <div id="map"></div>
+    <div id="info"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+
+</body>
+</html>
