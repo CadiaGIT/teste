@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f3; /* Couleur de fond douce */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease; /* Animation de fade in */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    font-size: 2rem; /* Taille de police du titre */
+    margin-bottom: 20px; /* Espacement en bas */
+}
+
+.cart-items {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.cart-items div {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    display: flex; /* Utiliser flexbox pour l'alignement */
+    justify-content: space-between; /* Espacement entre le nom et le prix */
+    align-items: center; /* Centrer verticalement */
+    transition: background-color 0.3s; /* Animation pour le changement de fond */
+}
+
+.cart-items div:hover {
+    background-color: #e9ecef; /* Changer de couleur au survol */
+}
+
+.cart-items div:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem; /* Taille de police pour le total */
+    margin-top: 20px; /* Espacement en haut */
+}
+
+.btn-clear {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Taille de police pour le bouton */
+    transition: background-color 0.3s; /* Animation pour le changement de couleur */
+}
+
+.btn-clear:hover {
+    background-color: #c82333; /* Changement de couleur au survol */
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informashop - Claviers</title>
+    <link rel="stylesheet" href="/projet 3 (informashop)/categorie/CSS/Claviers.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Informashop</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Catégories</button>
+            <div class="dropdown-content">
+              <a href="./categorie/HTML/Claviers.html">Claviers</a>
+                <a href="./categorie/HTML/Souris.html">Souris</a>
+                <a href="./categorie/HTML/Cameras.html">Cameras</a>
+                <a href="./categorie/HTML/Ordinateurs.html">Ordinateurs</a>
+                <a href="./categorie/HTML/Licences.html">Licences</a>
+                <a href="./categorie/HTML/Outils.html">Outils</a>
+                <a href="./categorie/HTML/Casques.html">Casques</a>
+                <a href="./categorie/HTML/Composants Informatiques.html">Composants Informatiques</a>
+            </div>
+        </div>
+        <div class="cart-icon" id="cartIcon">
+            <img src="/projet 3 (informashop)/Image/caddie.png" alt="Caddie">
+            <div class="cart-count" id="cartCount">0</div>
+        </div>
+        
+    </div>
+    
+    <div class="products">
+        <div class="product">
+            <img src="/projet 3 (informashop)/Image/Logitech Signature K650.jpg" alt="Produit 1">
+            <h2>Logitech Signature K650</h2>
+            <p>Prix : 34.99€</p>
+            <button class="add-to-cart" data-name="Logitech Signature K650" data-price="34.99">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="/projet 3 (informashop)/Image/Logitech G213 Prodigy.jpg" alt="Produit 2">
+            <h2>Logitech G213 Prodigy</h2>
+            <p>Prix : 49.99€</p>
+            <button class="add-to-cart" data-name="Logitech G213 Prodigy" data-price="49.99">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="/projet 3 (informashop)/Image/Logitech K120.jpg" alt="Produit 3">
+            <h2>Logitech K120</h2>
+            <p>Prix : 14.99€</p>
+            <button class="add-to-cart" data-name="Logitech K120" data-price="14.99">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="/projet 3 (informashop)/Image/Logitech G413 TKL SE.jpg" alt="Produit 3">
+            <h2>Logitech G413 TKL SE</h2>
+            <p>Prix : 59.99€</p>
+            <button class="add-to-cart" data-name="Logitech G413 TKL SE" data-price="59.99">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="/projet 3 (informashop)/Image/Cooler Master CK352.jpg" alt="Produit 3">
+            <h2>Cooler Master CK352</h2>
+            <p>Prix : 84.99€</p>
+            <button class="add-to-cart" data-name="Cooler Master CK352" data-price="84.99">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="/projet 3 (informashop)/Image/Cooler Master SK652.jpg" alt="Produit 3">
+            <h2>Cooler Master SK652</h2>
+            <p>Prix : 79.99€</p>
+            <button class="add-to-cart" data-name="Cooler Master SK652" data-price="79.99">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="/projet 3 (informashop)/Image/Sharkoon Skiller MECH SGK3.jpg" alt="Produit 3">
+            <h2>Sharkoon Skiller MECH SGK3</h2>
+            <p>Prix : 82.99€</p>
+            <button class="add-to-cart" data-name="Sharkoon Skiller MECH SGK3" data-price="82.99">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="/projet 3 (informashop)/Image/Perixx PERIBOARD-422.jpg" alt="Produit 3">
+            <h2>Perixx PERIBOARD-422</h2>
+            <p>Prix : 24.99€</p>
+            <button class="add-to-cart" data-name="Perixx PERIBOARD-422" data-price="24.99">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="/projet 3 (informashop)/Image/EPOMAKER x Aula F75.jpg" alt="Produit 3">
+            <h2>EPOMAKER x Aula F75</h2>
+            <p>Prix : 99.99€</p>
+            <button class="add-to-cart" data-name="EPOMAKER x Aula F75" data-price="99.99">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="/projet 3 (informashop)/Image/EPOMAKER x LEOBOG Hi75.jpg" alt="Produit 3">
+            <h2>EPOMAKER x LEOBOG Hi75</h2>
+            <p>Prix : 121.99€</p>
+            <button class="add-to-cart" data-name="EPOMAKER x LEOBOG Hi75" data-price="121.99">Ajouter au panier</button>
+        </div>
+
+
+
+    </div>
+    
+    <div class="cart-notification" id="cartNotification">
+        Produit ajouté au panier !
+    </div>
+    <script src="/projet 3 (informashop)/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>Simulateur de Devis</h1>
+    </div>
+    
+    <div class="container">
+        <h2>Calculez votre devis</h2>
+    
+        <div class="form-group">
+            <label for="service1">Développement Web (50€/heure)</label>
+            <input type="number" id="service1" value="0" min="0">
+        </div>
+        <div class="form-group">
+            <label for="service2">Design Graphique (40€/heure)</label>
+            <input type="number" id="service2" value="0" min="0">
+        </div>
+        <div class="form-group">
+            <label for="service3">Marketing Digital (30€/heure)</label>
+            <input type="number" id="service3" value="0" min="0">
+        </div>
+        <div class="form-group">
+            <button id="calculateBtn">Calculer le devis</button>
+        </div>
+    
+        <div class="devis-total" id="totalDevis">Total : 0€</div>
+    </div>
+    
+    <div class="info-box">
+        <h2>Comment ça fonctionne ?</h2>
+        <p>Ce simulateur vous permet d'estimer le coût de vos services.</p>
+        <p>Sélectionnez simplement le nombre d'heures dont vous avez besoin pour chaque service proposé (Développement Web, Design Graphique, Marketing Digital) et cliquez sur "Calculer le devis" pour voir le montant total.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

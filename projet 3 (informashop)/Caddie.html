@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votre Panier</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Lien vers Font Awesome pour les icônes -->
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-shopping-cart"></i> Votre Panier</h1>
+        
+        <!-- Conteneur pour les articles du panier -->
+        <div id="cartItems" class="cart-items"></div>
+        
+        <!-- Total -->
+        <h2>Total : <span id="totalPrice">0</span>€</h2>
+
+        <!-- Bouton pour vider le panier -->
+        <button id="clearCartButton" class="btn-clear">Vider le panier</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
