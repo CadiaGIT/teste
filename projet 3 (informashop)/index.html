@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informashop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Informashop</h1>
+        <div class="dropdown">
+            <button class="dropbtn">Catégories</button>
+            <div class="dropdown-content">
+                <a href="./categorie/HTML/Claviers.html">Claviers</a>
+                <a href="./categorie/HTML/Souris.html">Souris</a>
+                <a href="./categorie/HTML/Cameras.html">Cameras</a>
+                <a href="./categorie/HTML/Ordinateurs.html">Ordinateurs</a>
+                <a href="./categorie/HTML/Licences.html">Licences</a>
+            </div>
+        </div>
+        <div class="cart-icon" id="cartIcon">
+            <img src="/projet 3 (informashop)/Image/caddie.png" alt="Caddie">
+            <div class="cart-count" id="cartCount">0</div>
+        </div>
+    </div>
+
+    <!-- Titre pour les meilleurs produits -->
+    <h2 class="best-products-title">NOS 3 MEILLEURS PRODUITS</h2>
+    
+    <div class="products">
+        <div class="product">
+            <img src="./Image/Camera1.png" alt="Produit 1">
+            <h2>Logitech Webcam C920 HD Pro</h2>
+            <p>Prix : 100€</p>
+            <button class="add-to-cart" data-name="Logitech Webcam C920 HD Pro" data-price="100">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="./Image/Pâte thermique.png" alt="Produit 2">
+            <h2>Pâte thermique ARCTIC MX-4 (4 g)</h2>
+            <p>Prix : 2€</p>
+            <button class="add-to-cart" data-name="Pâte thermique ARCTIC MX-4 (4 g)" data-price="2">Ajouter au panier</button>
+        </div>
+        <div class="product">
+            <img src="./Image/Casque1.jpg" alt="Produit 3">
+            <h2>Jabra Evolve2 65 Casque PC Sans Fil</h2>
+            <p>Prix : 195€</p>
+            <button class="add-to-cart" data-name="Jabra Evolve2 65 Casque PC Sans Fil" data-price="195">Ajouter au panier</button>
+        </div>
+    </div>
+    
+    <div class="cart-notification" id="cartNotification">
+        Produit ajouté au panier !
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
